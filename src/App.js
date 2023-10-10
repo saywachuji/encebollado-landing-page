@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top p-3 navbar-dark bg-dark navbar-expand-lg ">
   <div class="container-fluid" >
     <a class="navbar-brand " href="#">A Taste of Ecuador</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +25,7 @@ function App() {
       </header>
 
 <section id='home'>
+  <div className='hero-background'></div>
   <div className='home-container text-center'>
   
       <h1>Encebollado</h1>
@@ -37,8 +38,6 @@ function App() {
 <section id='history'>
   <div className='history-container'>
     <div className='title-image history-title'><h3 className='text-center'>A quick history of the Encebollado</h3></div>
-  
-
    <div className="row text-center">
     <div className="col-md-6">Column</div>
     <div className="col-md-6">Column</div>
@@ -58,6 +57,11 @@ function App() {
       <div className="row">
         <div className="col-md-4">
           <h4>Ingredients</h4>
+          <p>
+            <ul>
+              <li>2 lbs fresh tuna albacore</li>
+            </ul>
+          </p>
         </div>
         <div className="col-md-4">
           <h4>Instructions</h4>

@@ -1,20 +1,59 @@
-#home{
-    height: 90vh;
-    position: relative;
 
+#home{
+    height: 100vh;
+    position: relative;
+    }
+.nav-color{
+    backdrop-filter: blur(10px);
 }
+.hero-background {
+    background-image: url('https://recetas.ileshop.com.ec/wp-content/uploads/2023/05/encebollado.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  
+  }
+
+  .hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;}
+
 .home-container {
-    max-width: 70%;
+    color: white;
     height: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
     position: absolute;
     right: 0;
     left: 0;
     top:0 ;
     bottom: 0;
     margin: auto;
+    z-index: 2;
+    
   }
   
+.title-image{
+    height:200px;
+    width: 100%;
+}
+
+.history-title{
+    background-color: black;
+    height:200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
